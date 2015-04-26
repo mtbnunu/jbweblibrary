@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="example.css">
+	</head>
+
+	<div>
+		<ul>
+			<li>
+				<a href="http://google.com" data-target="#exampletarget1">Link1</a>
+			</li>
+			<li>
+				<a href="http://google.com" data-target="#exampletarget2">Link2</a>
+			</li>
+			<li>
+				<a href="http://google.com" data-target="#exampletarget3">Link3</a>
+			</li>
+			<li>
+				<a href="http://google.com" data-target="#exampletarget4" data-offset="200">Link4 with offset 200</a>
+			</li>
+			<li>
+				<a href="http://google.com" data-target="#exampletarget4">Link4</a>
+			</li>
+			<li>
+				<a href="http://google.com" data-target="#exampletarget5">Link5</a>
+			</li>
+			<li>
+				<a href="http://google.com" data-target="#exampletarget6">Link6</a>
+			</li>
+			<li>
+				<a href="http://google.com" data-target="#wrong">Link With Wrong Target</a>
+			</li>
+			<li>
+				<a href="http://google.com">Link With no Target</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="section" id="exampletarget1">1</div>
+	<div class="section" id="exampletarget2">2</div>
+	<div class="section" id="exampletarget3">3</div>
+	<div class="section" id="exampletarget4" style="background-image:url(https://static.groupon.sg/41/61/1386751496141.jpg);background-size:cover;">4 parallax</div>
+	<div class="section" id="exampletarget5">5</div>
+	<div class="section" id="exampletarget6" style="background-image:url(http://s3.amazonaws.com/foodspotting-ec2/reviews/1789264/thumb_600.jpg);background-size:cover;">6 parallax</div>
+	<div class="section"></div>
+	<div class="section"></div>
+
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="../jbscript.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			smoothScroll("a");
+			parallax("#exampletarget4,#exampletarget6");
+		});
+	</script>
+</html>

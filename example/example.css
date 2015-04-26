@@ -1,0 +1,9 @@
+.section{
+	height:50vh;
+	font-size:100px;
+	font-weight:bold;
+	text-align: center;
+	line-height: 50vh;
+	border-bottom:1px solid black;
+	border-top:1px solid black;
+}
